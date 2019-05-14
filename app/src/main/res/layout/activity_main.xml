@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#E75D5D"
+            android:elevation="10dp" tools:targetApi="lollipop">
+
+            <ImageView
+                android:id="@+id/ic_magnify"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/ic_magnify"
+                android:layout_marginLeft="10dp"/>
+
+
+            <EditText
+                android:id="@+id/cityNameTextBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:imeOptions="actionSearch"
+                android:layout_toRightOf="@id/ic_magnify"
+                android:lines="1"
+                android:hint="@string/enterCity"
+                android:textColor="#FF0303"
+                android:textSize="15sp"
+                android:layout_toEndOf="@id/ic_magnify"
+                android:inputType=""
+                android:autofillHints="" tools:targetApi="o" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/dateFirst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/yyyy_mm_dd"
+            android:inputType="date"
+            android:autofillHints="" tools:targetApi="o" />
+
+        <EditText
+            android:id="@+id/countTravelers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/Peaple"
+            android:inputType="number"
+            android:autofillHints="" tools:targetApi="o" />
+
+        <Button
+            android:id="@+id/mapsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="googleMapsButtonClick"
+            android:text="@string/MapViwe" />
+
+        <Button
+            android:id="@+id/getWeatherButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="weatherButtonClick"
+            android:text="@string/Weather" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

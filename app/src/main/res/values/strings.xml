@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">TEWOTv.0</string>
+
+    <string name="search">Search</string>
+    <string name="defaultMetrics">Metric</string>
+    <string name="enterCity">Name of City</string>
+    <string name="yyyy_mm_dd">Date year-months-days</string>
+    <string name="_5">Weather for 5 days</string>
+    <string name="Weather">Weather</string>
+    <string name="MapViwe">Map of Hotels</string>
+    <string name="Peaple">Peaples</string>
+
+    <string name="Hello">Welcome</string>
+    <string name="urlFromWeather">https://api.openweathermap.org/data/2.5/weather?</string>
+    <string name="urlAviasales">http://engine.hotellook.com/</string>
+
+    <string name="googleApiKey">AIzaSyCDeWmnVbV2StjXczuAAVIQi-DP91eDduA</string>>
+    <string name="apiKeyFromWeather">10f568c25dd1031882572a45f785e651</string>
+    <string name="apiKeyFromAviasales">a2af25b6ad30a46073e3cd3d742ca07e</string>
+
+</resources>
